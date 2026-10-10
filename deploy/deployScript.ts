@@ -19,7 +19,12 @@ export default async function main(client: GenLayerClient<any>) {
 
     const deployTransaction = await client.deployContract({
       code: contractCode,
-      args: [],
+      args: [
+        "Support polyps that clearly improve the reef under the published charter. Reject empty, harmful, or non-contributing settlements.",
+        700,
+        "1000000000000000000",
+        100,
+      ],
     });
 
     const receipt = await client.waitForTransactionReceipt({
